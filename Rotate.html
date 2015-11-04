@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyle.css">
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js">
+        </script>
+            <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto 
+    }
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+            </style>
+    </head>
+<body>
+<section id="text">
+<h1>
+Lets do a little game...</h1>
+<p>Which way is up?</p>
+</section>
+<section id="button">
+<button name = "button" onclick="turnImage()">Rotate!</button>
+</section>
+    <section id="image">
+        <img id="image" width="400px" src="http://www.kunstkopie.nl/kunst/keith_haring_11033/untitled_pele_poster_1988__h1342_hi.jpg">
+    </section>
+<script>
+        console.log("Hi!");
+        console.log("click registered");
+var turnImage = function() {
+       $('#button').click(
+           $('#image').css({transform:"rotate(90deg)"}));
+       };
+</script>
+
+</body>
+</html>
